@@ -1,11 +1,11 @@
-# Love and Sharing Website  
+# Morningate Game Studio Website  
 
-Creative sandbox for the Love & Sharing AI project.  
-Built locally in VS Code and later hosted free on GitHub Pages or Netlify.
+Public hub for Morningate Game Studio.  
+Built locally in VS Code and hosted on GitHub Pages.
 
-## Local admin API
+## Local admin API (optional)
 
-An optional helper server powers the in-site admin panel for staging new storybook pages.
+An optional helper server powers the in-site admin panel used for staging storybook pages (legacy Love & Sharing tools).
 
 ```powershell
 python -m pip install -r requirements.txt

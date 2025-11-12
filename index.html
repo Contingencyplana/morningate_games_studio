@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Love & Sharing — Morningate</title>
-  <meta name="description" content="A gentle playground where AI and imagination grow together." />
+  <title>Morningate Game Studio</title>
+  <meta name="description" content="Morningate Game Studio — indie worlds, experiments, and playtests." />
   <!-- Social preview -->
-  <meta property="og:title" content="Love & Sharing — Morningate" />
-  <meta property="og:description" content="A gentle playground where AI and imagination grow together." />
+  <meta property="og:title" content="Morningate Game Studio" />
+  <meta property="og:description" content="Indie worlds by Morningate — Nightlands and more." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://contingencyplana.github.io/love_and_sharing_website_0/" />
+  <meta property="og:url" content="https://contingencyplana.github.io/morningate_game_studio/" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
   <link rel="stylesheet" href="styles/style.css" />
 </head>
@@ -20,13 +20,15 @@
     <div class="container row">
       <div class="brand">
         <span class="logo" aria-hidden="true">🌸</span>
-        <a class="brand-name" href="index.html">Love &amp; Sharing</a>
+        <a class="brand-name" href="index.html">Morningate Game Studio</a>
       </div>
       <nav class="nav" aria-label="Primary">
         <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" id="navToggle">Menu</button>
         <ul id="nav-list" class="nav-list">
           <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="pages/games.html">Games</a></li>
           <li><a href="pages/stories.html">Stories</a></li>
+          <li><a href="pages/reflection.html">Reflection</a></li>
           <li><a href="pages/about.html">About</a></li>
           <li><a href="mailto:mark@morningate.games">Contact</a></li>
         </ul>
@@ -36,8 +38,8 @@
 
   <main id="content">
     <section class="hero container">
-      <h1>Where kindness becomes play.</h1>
-      <p class="lede">A living library of tiny, self-contained experiences—cyberatoms—that glow brighter when shared.</p>
+      <h1>Indie worlds by Morningate.</h1>
+      <p class="lede">Thoughtful games and experiments — follow Nightlands and future titles.</p>
       <div class="cta-row">
         <a class="btn" href="pages/about.html">Learn more</a>
         <a class="btn btn-ghost" href="mailto:mark@morningate.games">Say hello</a>
@@ -49,6 +51,7 @@
       <article class="card">
         <h2>Featured Experiences</h2>
         <ul>
+          <li><a href="pages/games/nightlands.html">Nightlands — multiplayer survival in shifting night</a></li>
           <li><a href="stories/wordless/the_dot/index.html">🌈 The Dot (Intro)</a></li>
           <li><a href="stories/wordless/template_storybook/index.html">📖 Template Storybook</a></li>
           <li><a href="stories/wordless/dawn_remembered/index.html">📖 A Dawn Remembered</a></li>
@@ -120,5 +123,15 @@
 
   <script src="scripts/main.js"></script>
   <script src="scripts/admin_panel.js"></script>
+  <script>
+    // Reveal admin controls if explicitly requested via URL
+    try {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('admin') === '1') {
+        const btn = document.getElementById('adminPanelOpen');
+        if (btn) btn.hidden = false;
+      }
+    } catch {}
+  </script>
 </body>
 </html>

@@ -2,8 +2,9 @@
 const select = document.getElementById('chapterSelect');
 const content = document.getElementById('content');
 
-// Base path to your chapters in the repo
-const BASE = '/love_and_sharing_website_0/stories/harbinger/chapters/';
+// Compute base to chapters for GitHub Pages project sites
+const repoBase = window.location.pathname.split('/').slice(0, 2).join('/') || '';
+const BASE = `${repoBase}/stories/harbinger/chapters/`;
 
 async function loadChapter(file) {
   content.textContent = 'Loading…';
