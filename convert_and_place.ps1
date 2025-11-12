@@ -1,4 +1,4 @@
-﻿# convert_and_place.ps1
+# convert_and_place.ps1
 # Converts incoming .png files to sequential JPEG pages for Harbinger Dawn storybook.
 # Usage examples:
 #   pwsh ./convert_and_place.ps1 .\inbox\*.png
@@ -10,7 +10,9 @@ param (
     [string[]]$InputFiles
 )
 
-$dest = "C:\Users\Admin\love_and_sharing_website_0\stories\wordless\dawn_remembered\pages"
+$host.ui.WriteWarningLine("[Deprecated] convert_and_place.ps1 is disabled in this repo. Use a dedicated story/game repository for content pipelines.")
+return
+# $dest (deprecated) = "C:\\Users\\Admin\\love_and_sharing_website_0\\stories\\wordless\\dawn_remembered\\pages"
 
 if (-not $InputFiles -or $InputFiles.Count -eq 0) {
     Write-Warning "No input files provided. Supply PNG paths or drag them onto the script."
@@ -59,3 +61,5 @@ if ($converted -gt 0) {
 else {
     Write-Warning "No PNG files were converted."
 }
+
+

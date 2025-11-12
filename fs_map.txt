@@ -16,11 +16,9 @@ C:.
 +---drafts
 +---pages
 |       about.html
-|       harbinger.html
 |       stories.html
 |       
 +---scripts
-|       harbinger_viewer.js
 |       main.js
 |       
 +---stories

@@ -14,7 +14,7 @@ Scope:
 - Update README to reflect new purpose.
 
 Verification checklist:
-- Repo renamed to `morningate_game_studio` on GitHub.
+- Repo renamed to `morningate_games_studio` on GitHub.
 - GitHub Pages active (main/root) and loads homepage.
 - Navigation works: Home, Games → Nightlands, Stories, Harbinger, Reflection, Legacy page.
 - Footer shows “© 2025 Morningate Game Studio” on all pages.

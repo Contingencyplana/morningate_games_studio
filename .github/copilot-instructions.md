@@ -1,4 +1,4 @@
-# Copilot Instructions for Love & Sharing Website
+# Copilot Instructions for Morningate Game Studio Website
 
 ## Project Overview
 - This is a creative sandbox for the Love & Sharing AI project, blending static web content, interactive storybooks, and a local admin API for media management.
@@ -9,7 +9,7 @@
 - **Admin Panel:** Modal UI in `index.html` and logic in `scripts/admin_panel.js` for uploading and managing storybook pages.
 - **Backend API:** `admin_server.py` (Flask) provides `/api/storybooks` and `/api/upload` endpoints for admin panel integration. See `requirements.txt` for dependencies.
 - **Storybooks:** Each wordless book is a folder under `stories/wordless/`, following the template in `template_storybook/`. Each has its own `index.html`, scripts, and styles.
-- **Harbinger Novel:** Chapters live in `stories/harbinger/chapters/` as markdown files, referenced by viewers and documentation.
+- **Harbinger Novel (legacy content):** Chapters live in `stories/harbinger/chapters/` as markdown files. The standalone Harbinger viewer has been removed from the site for now.
 
 ## Developer Workflows
 - **Run Local Admin API:**
@@ -34,7 +34,7 @@
 ## Integration Points
 - **Frontend ↔ Backend:** Admin panel JS calls Flask API at `http://localhost:5001`.
 - **Storybook Display:** Readers in `stories/wordless/*/index.html` use local scripts for interactivity.
-- **Harbinger Viewer:** `scripts/harbinger_viewer.js` loads markdown chapters for the novel.
+ 
 
 ## Examples
 - To rename a storybook folder, update all references in scripts, markdown, and HTML (see recent `harbinger_dawn → dawn_remembered` change).
