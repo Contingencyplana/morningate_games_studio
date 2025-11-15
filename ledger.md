@@ -23,3 +23,15 @@ Follow-ups (optional):
 - Replace Nightlands placeholder images with real screenshots.
 - Add analytics (e.g., Plausible/GA) and update social preview images.
 - Consider a subtle link to the legacy page from the homepage or About.
+
+## 2025-11-16 - Doc refresh queue path realignment
+
+Status: Completed
+
+Scope:
+- Documented War Office relocation of the doc refresh queue to `planning/commonwealth_loop/doc_refresh_queue.md`.
+- Verified repo contains no references to `planning/doc_refresh_queue.md` or `planning/document_refresh_queue.md`.
+
+Verification checklist:
+- `rg -n "planning/doc_refresh_queue\.md"` returns no matches in the repo.
+- Future document links must point to `planning/commonwealth_loop/doc_refresh_queue.md`.
